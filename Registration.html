@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech for Girls Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Tech for Girls Registration</h2>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Email ID" required>
+      <label for="college">Select College:</label>
+<select id="college" name="college" required>
+  <option value="">-- Select College --</option>
+  <option value="MRCET">MRCET</option>
+  <option value="BVRIT">MRCEW</option>
+  <option value="VNR">MRIT</option>
+  <option value="MRUH">MREC</option>
+</select>
+
+
+      <div class="counter" id="counterDisplay">Click count: 0/5</div>
+      <button type="button" onclick="shareWhatsApp()" id="whatsappBtn">Share on WhatsApp</button>
+
+      <input type="file" id="screenshot" accept="image/*" required>
+      <button type="submit" id="submitBtn">Submit Registration</button>
+    </form>
+    <div class="message" id="thankYouMsg" style="display: none;">
+      🎉 Your submission has been recorded. Thanks for being part of Tech for Girls!
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
